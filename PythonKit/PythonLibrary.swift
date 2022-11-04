@@ -101,7 +101,7 @@ extension PythonLibrary {
     #if canImport(Darwin)
     private static var libraryNames = ["Python.framework/Versions/:/Python"]
     private static var libraryPathExtensions = [""]
-    private static var librarySearchPaths = ["", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python310.zip", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python3.10", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload", "/usr/local/lib/python3.10/site-packages", "/usr/local/Cellar/sip/6.6.2_1/libexec/lib/python3.10/site-packages"]
+    private static var librarySearchPaths = ["", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python310.zip", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks",  "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python3.10", "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload", "/usr/local/lib/python3.10/site-packages", "/usr/local/Cellar/sip/6.6.2_1/libexec/lib/python3.10/site-packages"]
     private static var libraryVersionSeparator = "."
     #elseif os(Linux)
     private static var libraryNames = ["libpython:", "libpython:m"]
