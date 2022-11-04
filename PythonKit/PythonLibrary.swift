@@ -99,7 +99,7 @@ extension PythonLibrary {
     private static let libraryPathVersionCharacter: Character = ":"
     
     #if canImport(Darwin)
-    private static var libraryNames = ["libpython3.10"]
+    private static var libraryNames = ["libpython:"]
     private static var libraryPathExtensions = [".dylib"]
     private static var librarySearchPaths = [ "/usr/local/Cellar/python@3.10/3.10.6_2/Frameworks/Python.framework/Versions/3.10/lib"]
     private static var libraryVersionSeparator = "."
